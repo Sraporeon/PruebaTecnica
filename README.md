@@ -1,16 +1,34 @@
-# React + Vite
+# prueba Sistema de Gestión de Contribuyentes y Comprobantes
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+##  Tecnologías Utilizadas
+* **Backend**: .NET 8, Entity Framework Core, SQL Server.
+* **Frontend**: React 18, Vite, Axios, Bootstrap.
+* **Base de Datos**: SQL Server con relaciones entre Contribuyentes y Comprobantes.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+##  Instrucciones de Configuración
 
-## React Compiler
+### 1. Base de Datos (SQL Server)
+1. Configure su cadena de conexión en el archivo `appsettings.json` del proyecto API.
+2. Ejecute las migraciones para crear las tablas:
+   ```bash
+   Update-Database
+3. (Opcional) Inserte datos de prueba en SSMS para ver resultados inmediatos.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### 2. Backend (.NET API)
+Abra la solución en Visual Studio.
 
-## Expanding the ESLint configuration
+Ejecute el proyecto (F5). La API estará disponible en https://localhost:7269.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Verifique los endpoints mediante Swagger.
+
+### 3. Frontend (React)
+Navegue a la carpeta del frontend en la terminal.
+
+Instale las dependencias: npm install 
+
+Inicie el servidor de desarrollo: npm run dev
+
+El API tiene habilitada una política de CORS para permitir peticiones desde el origen del frontend(di muchas vueltas aqui), asegurando que el intercambio de datos no sea bloqueado por el navegador. (spoiler: me bo bloqueo muchas veces. Pero resolvi)
+
+
