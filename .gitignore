@@ -45,3 +45,14 @@ obj/
 .vs/
 appsettings.Development.json
 *.user
+
+# Ignorar carpetas pesadas de React
+node_modules/
+dist/
+.env
+
+# Ignorar carpetas de compilación de .NET
+bin/
+obj/
+.vs/
+appsettings.Development.json
