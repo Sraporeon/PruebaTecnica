@@ -34,6 +34,7 @@ El API tiene habilitada una política de CORS para permitir peticiones desde el 
 
 ![alt text](image.png) - Api activo
 
+> 🔧 **Nota:** la carpeta `Backend` ahora contiene el proyecto `DGII.Api`. El código está versionado allí y ya no debes moverlo manualmente.
 
 Agregue la API dentro de la carpeta, esta debe ejecutarse en vs.NET por lo que habria que copiarlo o moverlo de origen que conincida con VS y la plantilla ASP.NET Core Web API (acepto criticas T_T)
 
@@ -44,5 +45,10 @@ Microsoft.EntityFrameworkCore.SqlServer
 Microsoft.EntityFrameworkCore.Design
 
 
-Eso seria todo. La mas tedioso en este prueba fueron las primeras travas tecnicas por detalles menores. Espero que les sea de su agrado.
+Eso seria todo. La mas tedioso en este prueba fueron las primeras travas tecnicas por detalles menores. 
+
+
+Espero que el resultado les sea de su agrado.
+
+*README actualizado antes del primer push con los últimos cambios.*
 
